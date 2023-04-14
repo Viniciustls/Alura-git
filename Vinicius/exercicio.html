@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+
+<h2>Álcool ou Gasolina</h2>
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function mostra(frase){
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var tanque = 40;
+	var kmGasolina = 480;
+	var kmAlcool = 300;
+
+	var consumoGasolina = kmGasolina / tanque;
+	var consumoAlcool = kmAlcool /  tanque;
+
+
+	mostra("O consumo de gasolina é de " + consumoGasolina + " litros por KM.");
+
+	mostra("O consumo de Álcool é de " + consumoAlcool + " litros por KM.");
+
+	var precoGasolina = 4.90;
+	var precoAlcool = 3.69;
+
+	mostra("Sabendo que o preço da gasonlina é " + precoGasolina + " e o preço do Álcool é " + precoAlcool);
+
+	mostra(" Então sabemos que:");
+
+	mostra("Com gasolina será gasto " + Math.round(tanque * precoGasolina) + " reais para encher o tanque");
+	mostra("Com Álcool será gasto " + Math.round(tanque * precoAlcool) + " reais para encher o tanque ")
+
+
+
+
+</script>
